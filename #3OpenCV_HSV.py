@@ -1,6 +1,6 @@
 import cv2
 
-img_color = cv2.imread('E:\python\OpenCV\sample.jpg')
+img_color = cv2.imread('D:\python\OpenCV\sample.jpg')
 height,width = img_color.shape[:2]
 
 img_HSV = cv2.cvtColor(img_color, cv2.COLOR_BGR2HSV)

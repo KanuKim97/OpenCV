@@ -7,7 +7,7 @@ cv2.namedWindow('Binary')
 cv2.createTrackbar('threshold', 'Binary', 0, 255, nothing)
 cv2.setTrackbarPos('threshold', 'Binary', 127)
 
-img_color = cv2.imread('E:\python\OpenCV\sample.jpg', cv2.IMREAD_COLOR)
+img_color = cv2.imread('D:\python\OpenCV\sample.jpg', cv2.IMREAD_COLOR)
 
 cv2.imshow('Color', img_color)
 cv2.waitKey(0)
