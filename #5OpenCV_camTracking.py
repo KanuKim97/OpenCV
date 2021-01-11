@@ -1,7 +1,6 @@
 import cv2 as cv
 import numpy as np
 
-
 hsv = 0
 lower_blue1 = 0
 upper_blue1 = 0
@@ -78,9 +77,7 @@ while(True):
     img_mask3 = cv.inRange(img_hsv, lower_blue3, upper_blue3)
     img_mask = img_mask1 | img_mask2 | img_mask3
 
-
     img_result = cv.bitwise_and(img_color, img_color, mask=img_mask)
-
 
     cv.imshow('img_color', img_color)
     cv.imshow('img_mask', img_mask)
@@ -89,6 +86,5 @@ while(True):
 
     if cv.waitKey(1) & 0xFF == 27:
         break
-
 
 cv.destroyAllWindows()
